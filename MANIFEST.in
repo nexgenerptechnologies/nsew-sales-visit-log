@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include nsew_sales_visit_log *.css
+recursive-include nsew_sales_visit_log *.csv
+recursive-include nsew_sales_visit_log *.html
+recursive-include nsew_sales_visit_log *.ico
+recursive-include nsew_sales_visit_log *.js
+recursive-include nsew_sales_visit_log *.json
+recursive-include nsew_sales_visit_log *.md
+recursive-include nsew_sales_visit_log *.png
+recursive-include nsew_sales_visit_log *.py
+recursive-include nsew_sales_visit_log *.svg
+recursive-include nsew_sales_visit_log *.txt
+recursive-exclude nsew_sales_visit_log *.pyc
