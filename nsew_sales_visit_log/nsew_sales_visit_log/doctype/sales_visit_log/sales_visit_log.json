@@ -40,7 +40,7 @@
    "fieldname": "complaint_type",
    "fieldtype": "Select",
    "label": "Complaint Type",
-   "options": "Original\nRepeat\nOther"
+   "options": "\nOriginal\nFake"
   },
   {
    "fieldname": "start_odometer_reading",
@@ -59,13 +59,15 @@
   },
   {
    "fieldname": "brand",
-   "fieldtype": "Data",
-   "label": "Brand"
+   "fieldtype": "Link",
+   "label": "Brand",
+   "options": "Brand"
   },
   {
    "fieldname": "category",
-   "fieldtype": "Data",
-   "label": "Category"
+   "fieldtype": "Link",
+   "label": "Category",
+   "options": "Item Group"
   },
   {
    "fieldname": "complaint_no",
@@ -80,7 +82,6 @@
   {
    "fieldname": "serial_usage_count",
    "fieldtype": "Int",
-   "hidden": 1,
    "label": "Serial Usage Count",
    "read_only": 1
   },
