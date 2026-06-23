@@ -1,0 +1,164 @@
+{
+ "actions": [],
+ "creation": "2024-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_name",
+  "mobile_number",
+  "complaint_type",
+  "start_odometer_reading",
+  "start_time",
+  "column_break_1",
+  "brand",
+  "category",
+  "complaint_no",
+  "serial_no",
+  "serial_usage_count",
+  "remarks",
+  "column_break_2",
+  "destination_odometer_reading",
+  "end_time",
+  "distance_traveled_km",
+  "per_unit_rate",
+  "amount",
+  "attach_document",
+  "created_by_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number"
+  },
+  {
+   "fieldname": "complaint_type",
+   "fieldtype": "Select",
+   "label": "Complaint Type",
+   "options": "Original\nRepeat\nOther"
+  },
+  {
+   "fieldname": "start_odometer_reading",
+   "fieldtype": "Float",
+   "label": "Start Odometer Reading"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Datetime",
+   "hidden": 1,
+   "label": "Start Time"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "brand",
+   "fieldtype": "Data",
+   "label": "Brand"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Data",
+   "label": "Category"
+  },
+  {
+   "fieldname": "complaint_no",
+   "fieldtype": "Data",
+   "label": "Complaint No."
+  },
+  {
+   "fieldname": "serial_no",
+   "fieldtype": "Data",
+   "label": "Serial No."
+  },
+  {
+   "fieldname": "serial_usage_count",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Serial Usage Count",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "destination_odometer_reading",
+   "fieldtype": "Float",
+   "label": "Destination Odometer Reading"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Datetime",
+   "hidden": 1,
+   "label": "End Time"
+  },
+  {
+   "fieldname": "distance_traveled_km",
+   "fieldtype": "Float",
+   "label": "Distance Traveled (KM)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "per_unit_rate",
+   "default": "1.5",
+   "fieldtype": "Currency",
+   "label": "Per Unit Rate"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "attach_document",
+   "fieldtype": "Attach",
+   "label": "Attach Document"
+  },
+  {
+   "fieldname": "created_by_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Created By Name",
+   "read_only": 1
+  }
+ ],
+ "links": [],
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Nsew Sales Visit Log",
+ "name": "Sales Visit Log",
+ "naming_rule": "Expression",
+ "autoname": "format:SVL-{YYYY}-{MM}-{####}",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
