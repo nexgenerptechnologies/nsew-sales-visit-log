@@ -8,6 +8,8 @@
   "mobile_number",
   "complaint_type",
   "start_odometer_reading",
+  "in_warranty",
+  "out_warranty",
   "start_time",
   "column_break_1",
   "brand",
@@ -23,6 +25,7 @@
   "per_unit_rate",
   "amount",
   "attach_document",
+  "payment_received",
   "created_by_name"
  ],
  "fields": [
@@ -48,9 +51,18 @@
    "label": "Start Odometer Reading"
   },
   {
+   "fieldname": "in_warranty",
+   "fieldtype": "Check",
+   "label": "In Warranty"
+  },
+  {
+   "fieldname": "out_warranty",
+   "fieldtype": "Check",
+   "label": "Out Warranty"
+  },
+  {
    "fieldname": "start_time",
    "fieldtype": "Datetime",
-   "hidden": 1,
    "label": "Start Time"
   },
   {
@@ -102,7 +114,6 @@
   {
    "fieldname": "end_time",
    "fieldtype": "Datetime",
-   "hidden": 1,
    "label": "End Time"
   },
   {
@@ -127,6 +138,11 @@
    "fieldname": "attach_document",
    "fieldtype": "Attach",
    "label": "Attach Document"
+  },
+  {
+   "fieldname": "payment_received",
+   "fieldtype": "Currency",
+   "label": "Payment Received"
   },
   {
    "fieldname": "created_by_name",
