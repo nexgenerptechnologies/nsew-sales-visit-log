@@ -45,12 +45,12 @@ frappe.ui.form.on('Sales Visit Log', {
     // Before save actions
     before_save: function(frm) {
 
-        // Auto-fill Start Time
-        if (frm.doc.start_odometer_reading && !frm.doc.start_time) {
+        // Auto-fill Start Time (always on first save)
+        if (!frm.doc.start_time) {
             frm.set_value('start_time', frappe.datetime.now_datetime());
         }
 
-        // Auto-fill End Time
+        // Auto-fill End Time (only if destination odometer reading is filled)
         if (frm.doc.destination_odometer_reading && !frm.doc.end_time) {
             frm.set_value('end_time', frappe.datetime.now_datetime());
         }

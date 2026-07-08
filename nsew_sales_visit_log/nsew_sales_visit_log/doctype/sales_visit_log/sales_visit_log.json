@@ -4,13 +4,13 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "start_time",
   "customer_name",
   "mobile_number",
   "complaint_type",
   "start_odometer_reading",
   "in_warranty",
   "out_warranty",
-  "start_time",
   "column_break_1",
   "brand",
   "category",
@@ -63,7 +63,8 @@
   {
    "fieldname": "start_time",
    "fieldtype": "Datetime",
-   "label": "Start Time"
+   "label": "Start Time",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_1",
@@ -114,7 +115,8 @@
   {
    "fieldname": "end_time",
    "fieldtype": "Datetime",
-   "label": "End Time"
+   "label": "End Time",
+   "read_only": 1
   },
   {
    "fieldname": "distance_traveled_km",
